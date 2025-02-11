@@ -65,7 +65,7 @@ public class MemberRepositoryV0 {
         }
     }
 
-    public void udpate(String memberId, int money) {
+    public void update(String memberId, int money) {
         String sql = "update member set money = ? where member_id = ?";
 
         Connection con = null;

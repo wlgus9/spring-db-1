@@ -1,6 +1,5 @@
 package hello.jdbc.repository;
 
-import hello.jdbc.connection.DBConnectionUtil;
 import hello.jdbc.domain.Member;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -72,7 +71,7 @@ public class MemberRepositoryV1 {
         }
     }
 
-    public void udpate(String memberId, int money) {
+    public void update(String memberId, int money) {
         String sql = "update member set money = ? where member_id = ?";
 
         Connection con = null;
